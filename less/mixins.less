@@ -1,1 +1,38 @@
 // Mixins Here
+
+.paddingTopBot(){
+    padding: 15px 0px 15px 0px;
+}
+
+.paddingLeftRight(){
+    padding: 0px 10px 0px 10px;
+}
+
+.centeredFlexColumn(){
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonTemplate(@darkBlue, @buttonFont, @buttonRadius, @marginRight){
+    background-color: @darkBlue; //currently #242c3c
+    font-size: @buttonFont;
+    border-radius: @buttonRadius;
+    color:white;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    margin-right: @marginRight;
+    
+    transition: 0.5s;
+}
+
+.hover(){
+    background-color: black;
+    color: white;
+    font-size: 28px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color:black;
+    border-radius: 10px;
+    opacity:.7;
+}
